@@ -111,7 +111,23 @@
         background: $white2;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         border-radius: 10px;
-        font-family: $font-montserrat;;
+        font-family: $font-montserrat;
+
+        input[type='text'] {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 16px;
+            gap: 16px;
+            width: 240px;
+            height: 46px;
+            background: $white;
+            border: 1.5px solid $light_gray;
+            border-radius: 8px;
+            outline: none;
+            margin-left: 18px;
+        }
 
         &__info {
             position: absolute;
@@ -163,21 +179,5 @@
         &__scrolling::-webkit-scrollbar {
             width: 0;
         }
-    }
-
-    input[type='text'] {
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 16px;
-        gap: 16px;
-        width: 240px;
-        height: 46px;
-        background: $white;
-        border: 1.5px solid $light_gray;
-        border-radius: 8px;
-        outline: none;
-        margin-left: 18px;
     }
 </style>
